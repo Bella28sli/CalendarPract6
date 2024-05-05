@@ -17,6 +17,10 @@ namespace CalendarPract6.View.Pages
         {
             CalendarPage.mainViewModel = mainViewModel;
             InitializeComponent();
+            if(App.Theme == "LightTheme")
+            {
+                ThemeToggle.IsChecked = true;
+            }
             DataContext = mainViewModel;
         }
 
@@ -53,6 +57,16 @@ namespace CalendarPract6.View.Pages
 
             string monthYear = new DateTime(dateDefault.Year, dateDefault.Month, 1).ToString("MMMM, yyyy");
             mainViewModel.DateLabel = monthYear;
+        }
+
+        private void ToggleButton_Checked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            App.Theme = "LightTheme";
+        }
+
+        private void ToggleButton_Unchecked(object sender, System.Windows.RoutedEventArgs e)
+        {
+            App.Theme = "DarkTheme";
         }
     }
 }

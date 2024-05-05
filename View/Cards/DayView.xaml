@@ -7,12 +7,12 @@
              mc:Ignorable="d" 
              d:DesignHeight="80" d:DesignWidth="80" MaxWidth="80" MaxHeight="80">
     <Grid>
-        <Button Command="{Binding OpenCommand}"  Background="{x:Null}" BorderBrush="#FFE91E63" Foreground="{x:Null}" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="" BorderThickness="3,3,3,3">
+        <Button Command="{Binding OpenCommand}"  Background="{x:Null}" BorderBrush="{DynamicResource SecondaryDark}" Foreground="{x:Null}" Height="80" HorizontalAlignment="Center" VerticalAlignment="Center" Cursor="" BorderThickness="3,3,3,3">
             <Grid Grid.Row="0" Grid.Column="0" Width="85" Height="80" Cursor="Hand" VerticalAlignment="Center" HorizontalAlignment="Center">
                 <Grid.ContextMenu>
-                    <ContextMenu>
-                        <MenuItem Header="Добавить" Background="#FFF7F2BD" Foreground="#FF841036" Command="{Binding OpenCommand}"/>
-                        <MenuItem Header="Очистить" Background="#FFF7F2BD" Foreground="#FF841036" Command="{Binding CleanCommand}"/>
+                    <ContextMenu Background="{DynamicResource Primary}">
+                        <MenuItem Header="Добавить" Background="{DynamicResource SecondaryLight}" Foreground="{DynamicResource SecondaryDark}" Command="{Binding OpenCommand}"/>
+                        <MenuItem Header="Очистить" Background="{DynamicResource SecondaryLight}" Foreground="{DynamicResource SecondaryDark}" Command="{Binding CleanCommand}"/>
                     </ContextMenu>
                 </Grid.ContextMenu>
                 <Grid.ColumnDefinitions>
@@ -22,7 +22,7 @@
                     <RowDefinition />
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="0" Grid.Column="0" Content="{Binding Date}" FontSize="16" FontFamily="Century Gothic" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#E5A1084A" FontWeight="Bold" />
+                <Label Grid.Row="0" Grid.Column="0" Content="{Binding Date}" FontSize="16" FontFamily="Century Gothic" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="{DynamicResource Secondary}" FontWeight="Bold" />
                 <Image Grid.Row="1" Grid.Column="0"  Source="{Binding FirstImage}"  />
             </Grid>
         </Button>

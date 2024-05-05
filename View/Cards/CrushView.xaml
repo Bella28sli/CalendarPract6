@@ -23,7 +23,8 @@
               IsChecked="{Binding IsChecked, Mode=TwoWay}"
               Style="{StaticResource MaterialDesignFlatPrimaryToggleButton}"
               ToolTip="MaterialDesignFlatPrimaryToggleButton" 
-              Background="#FFE9DA79">
+              Background="{DynamicResource SecondaryLight}"
+              Foreground="{DynamicResource SecondaryDark}">
                 <ToggleButton.Triggers>
                     <EventTrigger RoutedEvent="ToggleButton.Checked">
                         <BeginStoryboard>
@@ -53,7 +54,7 @@
             </ToggleButton>
         </Grid>
         <Grid Grid.Column="2">
-            <Label Content="{Binding CrushName}" FontFamily="Century Gothic" FontSize="22" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="#E5F9DB19" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="{Binding CrushName}" FontFamily="Century Gothic" FontSize="22" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Foreground="{DynamicResource Secondary}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <!-- биндинг crushName -->
         </Grid>
     </Grid>

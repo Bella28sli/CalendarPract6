@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <materialDesign:BundledTheme BaseTheme="Dark" PrimaryColor="Pink" SecondaryColor="Yellow" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/ThemeLib;component/Themes/DarkTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <!-- primary -->
             <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="#65ffd0"/>

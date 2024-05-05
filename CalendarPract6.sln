@@ -5,6 +5,10 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarPract6", "CalendarPract6.csproj", "{9978FAA6-808D-4949-A07F-A7E773B5A1A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeLib", "..\ThemeLib\ThemeLib.csproj", "{9EF88C4B-29FF-4529-891D-68FAF987405D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerDeserLib", "..\SerDeserLib\SerDeserLib.csproj", "{05C72636-CCE9-4099-833F-693F84566F87}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9978FAA6-808D-4949-A07F-A7E773B5A1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9978FAA6-808D-4949-A07F-A7E773B5A1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9978FAA6-808D-4949-A07F-A7E773B5A1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EF88C4B-29FF-4529-891D-68FAF987405D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EF88C4B-29FF-4529-891D-68FAF987405D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EF88C4B-29FF-4529-891D-68FAF987405D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EF88C4B-29FF-4529-891D-68FAF987405D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05C72636-CCE9-4099-833F-693F84566F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C72636-CCE9-4099-833F-693F84566F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C72636-CCE9-4099-833F-693F84566F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C72636-CCE9-4099-833F-693F84566F87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

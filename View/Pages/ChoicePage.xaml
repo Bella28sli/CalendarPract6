@@ -9,7 +9,7 @@
       d:DesignHeight="800" d:DesignWidth="575"
       Title="ChoicePage">
 
-    <Grid Background="#FF323232">
+    <Grid Background="{DynamicResource Primary}">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
             <RowDefinition Height="10*"></RowDefinition>
@@ -23,25 +23,31 @@
             <Grid Grid.Column="0">
                 <Button
                     Height="73"
+                    BorderThickness="3"
                       IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                       Style="{StaticResource MaterialDesignPaperSecondaryDarkButton}"
+                    Background="{DynamicResource Primary}"
+                    BorderBrush="{DynamicResource SecondaryDark}"
                       ToolTip="Resource name: MaterialDesignPaperSecondaryDarkButton" 
-                    Command="{Binding ReturnCommand}">
-                    <materialDesign:PackIcon Kind="ArrowLeft" Width="70" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#E5F9DB19" />
+                    Command="{Binding ReturnCommand}" Cursor="Hand" VerticalAlignment="Top">
+                    <materialDesign:PackIcon Kind="ArrowLeft" Width="70" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource Secondary}" />
                 </Button>
             </Grid>
             <Grid Grid.Column="2">
                 <Button
+                    BorderThickness="3"
+                    Background="{DynamicResource Primary}"
+                    BorderBrush="{DynamicResource SecondaryDark}"
                     Height="73"
                       IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
                       Style="{StaticResource MaterialDesignPaperSecondaryDarkButton}"
                       ToolTip="Resource name: MaterialDesignPaperSecondaryDarkButton" 
-                    Command="{Binding SaveCommand}">
-                    <materialDesign:PackIcon Kind="ContentSave" Width="70" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#E5F9DB19" />
+                    Command="{Binding SaveCommand}" VerticalAlignment="Top">
+                    <materialDesign:PackIcon Kind="ContentSave" Width="70" Height="70" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="{DynamicResource Secondary}" />
                 </Button>
             </Grid>
             <Grid Grid.Column="1">
-                <Label Content="{Binding CardDate}" FontFamily="Century Gothic" FontSize="24" Foreground="#FFE5CA1B" Margin="0,2,0,0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+                <Label Content="{Binding CardDate}" FontFamily="Century Gothic" FontSize="24" Foreground="{DynamicResource Secondary}" Margin="0,2,0,0" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
                     <Label.Triggers>
                         <EventTrigger RoutedEvent="Label.Loaded">
                             <BeginStoryboard>
